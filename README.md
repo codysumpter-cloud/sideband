@@ -69,9 +69,6 @@ On most Linux-based operating systems, you can simply download the pre-compiled 
 Depending on your Linux distribution, you may need to install a few other packages for full voice call, audio messaging and clipboard functionality. Make sure you have `opusfile`, and a clipboard manager like `xclip` or `wl-clipboard` installed:
 
 ```bash
-# For Debian 13+, Ubuntu 24.04+ and derivatives
-sudo apt install libopusfile0 xclip xsel
-
 # For Debian 12+, Ubuntu 22.04+ and derivatives
 sudo apt install libopusfile0 xclip xsel
 
@@ -184,7 +181,9 @@ python3 -m sbapp.main
 
 ## On Raspberry Pi
 
-You can install Sideband on all Raspberry Pi models that support 64-bit operating systems, and can run at least Python version 3.11.
+The easiest way to install Sideband on Raspberry Pi is to simply download and run the `aarch64` AppImage. On some versions of Raspberry Pi OS, you may also need to install additional libraries for full voice and clipboard functionality with `sudo apt install libopusfile0 xclip xsel`.
+
+You can also install Sideband using `pip` on all Raspberry Pi models that support 64-bit operating systems, and can run at least Python version 3.11.
 
 The install instructions below assume that you are installing Sideband on 64-bit Raspberry Pi OS (based on Debian 13 "Trixie" or later). If you're running something else on your Pi, you might need to modify some commands slightly.
 
